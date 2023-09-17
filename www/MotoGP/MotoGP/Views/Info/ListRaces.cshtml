@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MotoGP.Models.Race>
+
+@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+        var current_month = 0;
+}
+
+
+@foreach(Race race in Model)
+{
+    if(race.Date.Month != current_month)
+    {
+        current_month = race.Date.Month;
+        <h2>@race.Date.ToString("MMMM")</h2>
+    }
+    @*<p>@(Html.DisplayFor(modelItem => race.Date)) - <a href="@Url.Action("ShowRace","Info",new{ RaceID = race.RaceID})">@Html.DisplayFor(modelItem => race.Name)</a></p>*@
+       <p>@(Html.DisplayFor(modelItem => race.Date)) - <a asp-controller="Info" asp-action="ShowRace" asp-route-id="@race.RaceID">@Html.DisplayFor(modelItem => race.Name)</a></p>
+
+
+}
+
+<a asp-controller="Home" asp-action="Menu">Back</a> |
+<a asp-controller="Info" asp-action="BuildMap">Races on map</a> | 
+<a asp-controller="Info" asp-action="SelectRace"> One by one</a> |

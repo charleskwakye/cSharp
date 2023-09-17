@@ -1,0 +1,11 @@
+﻿@ViewData["_Layout"]
+
+@model MotoGP.Models.Ticket
+
+@{
+    DateTime now = DateTime.Now;
+    string strDate = now.ToString("dd/M/yyyy");
+
+}
+<p>Thank you <b>@Model.Name</b> for ordering tickets in <b> @Model.Address</b>  on <b>@Model.OrderDate</b> for the race. Your booking is registered on <b>@strDate</b> . We will send the <b>@Model.Number</b>  tickets as soon as possible.</p>
+<a asp-controller="Home" asp-action="Menu">Back</a>

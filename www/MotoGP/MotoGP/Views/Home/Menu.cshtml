@@ -1,0 +1,69 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+    ViewData["Title"] = "Menu Page";
+
+}
+
+<style>
+    .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .width-auto {
+        width: 100vw;
+    }
+
+    .box {
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .box-1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .admin-link {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+}
+</style>
+
+@*@{
+    var banner = String.Format("/images/banners/banner{0}.jpg", @ViewData["BannerNr."]);
+}
+<img src="@banner" />*@
+
+
+<img src="@Html.Raw(String.Format("/images/banners/banner{0}.jpg",@ViewData["BannerNr."]))"/>
+
+<div class="box">
+    <div class="box-1">
+        <a class="box-img" asp-controller="Info" asp-action="ListRaces"><img src="~/images/banners/races.png" /></a>
+        <a class="box-img" asp-controller="Info" asp-action="ListTeams"><img src="~/images/banners/teams.png" /></a>
+    </div>
+
+    <div class="box-2">
+        <a class="box-img" asp-controller="Info" asp-action="ListRiders"><img src="~/images/banners/riders.png" /></a>
+        <a class="box-img" asp-controller="Shop" asp-action="OrderTicket"><img src="~/images/banners//tickets.png" /></a>
+
+    </div>
+</div>
+
+<a asp-controller="Shop" asp-action="ListTickets" class="admin-link">Admin Link</a>

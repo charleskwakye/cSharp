@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]-MotoGP</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    @{
+        var banners = new List<String>{ "bannerRaces.jpg", "bannerRiders.jpg", "bannerTeams.jpg", "bannerTickets.jpg" };
+        var titles = new List<String>{ "Races", "Riders", "Teams", "Order Tickets" };
+        var banneNr = banners[Convert.ToInt32(@ViewData["BannerNr"])];
+        //var title = titles[Convert.ToInt32(@ViewData["BannerNr"])];
+
+    }
+<a asp-controller="Home" asp-action="Index"><img src="@Html.Raw(String.Format("/images/banners/{0}",banneNr))"/></a>
+@*<h1>@String.Format(title)</h1>*@
+<h1>@ViewData["Title"]</h1>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿@model MotoGP.Models.ViewModels.ListTicketsViewModel
+
+
+
+<form asp-controller="Shop" asp-action="ListTickets" method="get">
+    <select asp-for="raceID" asp-items="Model.Races">
+        <option value="0">--Select a race--</option>
+    </select>
+    <input type="submit" value="Get race" />
+</form>
+
+@{
+    if(Model.Tickets.Count != 0)
+    {
+        
+      <table>
+    <tr>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].OrderDate))</td>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].Name))</td>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].Email))</td>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].Address))</td>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].Country))</td>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].Race))</td>
+        <td>@(Html.DisplayNameFor(model => model.Tickets[0].Number))</td>
+        <td></td>
+       
+    </tr>
+    @foreach (var item in Model.Tickets)
+    {
+        <tr>
+            
+            <td>@(Html.DisplayFor(modelItem => item.OrderDate))</td>
+            <td>@(Html.DisplayFor(modelItem => item.Name))</td>
+            <td>@(Html.DisplayFor(modelItem => item.Email))</td>
+            <td>@(Html.DisplayFor(modelItem => item.Address))</td>
+            <td>@(Html.DisplayFor(modelItem => item.Race.Country))</td>
+            <td>@(Html.DisplayFor(modelItem => item.Race.Name))</td>
+            <td>@(Html.DisplayFor(modelItem => item.Number))</td>
+            @{
+                if(item.Paid){
+                            <td>Paid</td>
+                        }
+                        else
+                        {
+                            <td><a asp-controller="Shop" asp-action="EditTicket" asp-route-id="@item.TicketID">Pay</a></td>
+                        }
+                        
+            }
+        </tr>
+    }
+
+        </table>
+    }
+    else
+    {
+        <p>No tickets ordered for this race</p>
+    }
+}
+
+<a asp-controller="Info" asp-action="OrderTicket">Back</a>

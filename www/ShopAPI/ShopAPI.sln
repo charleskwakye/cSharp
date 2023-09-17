@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopAPI", "ShopAPI\ShopAPI.csproj", "{E900133E-E403-4377-82B5-9D613C7831C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.DAL", "Shop.DAL\Shop.DAL.csproj", "{102D048A-872A-417E-845E-5CD16E134623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shop.Web", "Shop.Web\Shop.Web.csproj", "{C43CE31D-B4A5-40AA-AF4E-80668953BA34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E900133E-E403-4377-82B5-9D613C7831C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E900133E-E403-4377-82B5-9D613C7831C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E900133E-E403-4377-82B5-9D613C7831C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E900133E-E403-4377-82B5-9D613C7831C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{102D048A-872A-417E-845E-5CD16E134623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102D048A-872A-417E-845E-5CD16E134623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102D048A-872A-417E-845E-5CD16E134623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102D048A-872A-417E-845E-5CD16E134623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C43CE31D-B4A5-40AA-AF4E-80668953BA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43CE31D-B4A5-40AA-AF4E-80668953BA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43CE31D-B4A5-40AA-AF4E-80668953BA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43CE31D-B4A5-40AA-AF4E-80668953BA34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09DE80D2-88C5-48D6-A9DB-21B49DFC256A}
+	EndGlobalSection
+EndGlobal

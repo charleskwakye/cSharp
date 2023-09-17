@@ -1,0 +1,11 @@
+﻿@model IEnumerable<MotoGP.Models.Rider>
+
+@{
+    foreach(var item in Model)
+    {
+        <img src="@Html.Raw(String.Format("/images/riders/{0}.jpg",item.Number))"/>
+        <img src="@Html.Raw(String.Format("/images/flags/{0}.png",item.CountryID))"/>
+        <p>@item.Number</p>
+        <p>@item.FirstName @item.LastName</p>
+    }
+}

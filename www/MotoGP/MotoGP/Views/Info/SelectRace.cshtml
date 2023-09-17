@@ -1,0 +1,23 @@
+﻿@model MotoGP.Models.ViewModels.SelectRaceViewModel
+
+<form asp-controller="Info" asp-action="SelectRace" method="get">
+    <select asp-for="raceID" asp-items="Model.Races">
+        <option value="0">--Select a race--</option>
+    </select>
+    <input type="submit" value="Get race" />
+</form>
+
+@{
+    if(Model.raceID != 0)
+    {
+        <div><img src="@Html.Raw(String.Format("/images/races/{0}.jpg",Model.raceID))"/></div>
+        <p>@Html.DisplayFor(Model => Model.Name) - @Html.DisplayFor(Model=>Model.Country)</p>
+        <p>Length:  @Html.DisplayFor(Model => Model.Length)</p>
+        <p>Date:  @Html.DisplayFor(Model => Model.Date)</p>
+        <p>@Html.DisplayFor(Model => Model.Description)</p>
+
+    }
+
+}
+
+<a asp-controller="Info" asp-action="ListRaces" >Back</a>

@@ -1,0 +1,29 @@
+﻿@model MotoGP.Models.Ticket
+
+
+<form asp-action="EditTicket">
+    <input type="hidden" asp-for="TicketID"/>
+    
+    @*<input type="hidden" asp-for="Name"/>*@
+    <p>asp-for="Name">@Html.DisplayNameFor(model=>model.Name)  @Html.DisplayFor(model => model.Name)</p>
+
+    <p>@Html.DisplayNameFor(model =>model.Email)  @Html.DisplayFor(model => model.Email)</p>
+@*  <input type="hidden" asp-for="Email"/>
+*@    @*<p asp-for="Address">@Html.DisplayNameFor(model =>model.Address)  @Html.DisplayFor(model => model.Address)</p>*@
+   @* <input type="hidden" asp-for="Address"/>*@
+
+    <p>@Html.DisplayNameFor(model =>model.Country)  @Html.DisplayFor(model => model.Country.Name)</p>
+    @*<input type="hidden" asp-for="CountryID"/>*@
+
+    <p>@Html.DisplayNameFor(model =>model.Race)  @Html.DisplayFor(model => model.Race.Name)</p>
+    @*<input type="hidden" asp-for="RaceID"/>*@
+
+    <p>@Html.DisplayNameFor(model =>model.Number)  @Html.DisplayFor(model => model.Number)</p>
+    @*<input type="hidden" asp-for="Number"/>*@
+    
+    <input type="checkbox" asp-for="Paid" value="True"/>
+    <label asp-for="Paid">@Html.DisplayNameFor(model => model.Paid)</label>,
+    <br />
+
+    <input type="submit" value="Register"/><br />
+</form>

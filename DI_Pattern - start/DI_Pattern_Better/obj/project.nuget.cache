@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6aJsu/BOb7NBly4dlj3CYjXXM/hbm+NEGhR4ldJRgvOzMK630M1OM/XUT2gQX/9L9YGkakAEEf9iE4QtbfGD6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\r0879035\\Desktop\\Courses\\C#\\DI_Pattern - start\\DI_Pattern_Better\\DI_Pattern_Better.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\r0879035\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\r0879035\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

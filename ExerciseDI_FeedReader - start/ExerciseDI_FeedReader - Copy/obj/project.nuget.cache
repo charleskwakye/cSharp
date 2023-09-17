@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "wRjczGmCl57TLvCGIskArqESrlLotpFbOVG7coEyl53FXjbLdhUWfBSGjbEvBbqMmMM2vQ1t7qhsDp4FpYqlHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\r0879035\\Desktop\\Courses\\C#\\ExerciseDI_FeedReader - start\\ExerciseDI_FeedReaderBetter\\ExerciseDI_FeedReaderBetter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\r0879035\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\r0879035\\.nuget\\packages\\moq\\4.18.4\\moq.4.18.4.nupkg.sha512",
+    "C:\\Users\\r0879035\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

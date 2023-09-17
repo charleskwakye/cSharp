@@ -1,0 +1,15 @@
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\bin\Debug\net6.0\IntroExercise.exe
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\bin\Debug\net6.0\IntroExercise.deps.json
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\bin\Debug\net6.0\IntroExercise.runtimeconfig.json
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\bin\Debug\net6.0\IntroExercise.dll
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\bin\Debug\net6.0\IntroExercise.pdb
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.csproj.AssemblyReference.cache
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.AssemblyInfoInputs.cache
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.AssemblyInfo.cs
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.csproj.CoreCompileInputs.cache
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.dll
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\refint\IntroExercise.dll
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.pdb
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\IntroExercise.genruntimeconfig.cache
+C:\Users\r0879035\Desktop\C#\IntroExercise\IntroExercise\obj\Debug\net6.0\ref\IntroExercise.dll

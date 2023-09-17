@@ -1,0 +1,20 @@
+﻿@model MusicStore.Models.Album
+
+@{
+    ViewData["Title"] = "Album Details";
+}
+
+<h1>@Html.DisplayFor(model => model.Title)</h1>
+
+ <img alt="@Html.DisplayFor(model => model.Title)"  src="~/content/@(Html.DisplayFor(model => model.AlbumArtUrl))"/>
+
+ <p><i> @Html.DisplayNameFor(model => model.Genre):</i> @Html.DisplayFor(model => model.Genre.Name)</p>
+  <p><i> @Html.DisplayNameFor(model => model.Artist):</i> @Html.DisplayFor(model => model.Artist.Name)</p>
+  <p><i> @Html.DisplayNameFor(model => model.Price):</i> @Html.DisplayFor(model => model.Price)</p>
+
+<p>
+    <a class="text-decoration-none" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-id="@Model.AlbumID">Add to cart</a>
+</p>
+<p>
+     <a class="text-decoration-none" asp-controller="Home" asp-action="Index">Back</a>
+</p>
